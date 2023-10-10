@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f5f9ff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1070px;
+  width: 100%;
+  display: flex;
+  margin-inline: 1rem;
+}
+
+.gradient-section {
+  width: 50%;
+  position: relative;
+  margin-right: 3rem;
+}
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  background-color: #ccff99;
+  background-image: radial-gradient(
+      at 83% 69%,
+      hsla(280, 67%, 78%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 9% 70%, hsla(18, 81%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 61% 52%, hsla(153, 75%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 28% 93%, hsla(321, 74%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 34% 6%, hsla(216, 89%, 66%, 1) 0px, transparent 50%),
+    radial-gradient(at 51% 86%, hsla(295, 97%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 32% 55%, hsla(295, 99%, 66%, 1) 0px, transparent 50%);
+}
+
+.gradient-content {
+  padding: 2rem;
+  width: 92%;
+  color: hsl(240, 54%, 15%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Send Email</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="gradient-section">
+        <div class="gradient"></div>
+        <div class="gradient-content">
+          <h1 class="heading">Bem vindo ao Hub <span>Criativo!</span></h1>
+          <p class="paragraph">
+            Sua porta de entrada para um mundo de possibilidades criativas
+            começa aqui.
+          </p>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Olá,amigo(a)!</h2>
+        <p>Bem vindo(a) ao nosso formulário para enviar e-mail!</p>
+        <form>
+          <div class="form-group">
+            <label for="to">To:</label>
+            <input
+              type="text"
+              id="to"
+              name="to"
+              required
+              autocomplete="off"
+              placeholder="Exemplo@email.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto:</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              autocomplete="off"
+              placeholder="Collaboration Request"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              spellcheck="false"
+              autocomplete="off"
+              placeholder="Your Text..."
+            ></textarea>
+          </div>
+          <div class="form-group result-container">
+            <p class="result">E-mail enviado com sucesso.</p>
+            <button type="button" class="send-btn">Enviar E-mail</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
